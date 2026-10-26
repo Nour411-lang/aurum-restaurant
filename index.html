@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Aurum | Fine Dining Mediterranean Restaurant in Carthage</title>
+<meta name="description" content="Aurum is a fine dining restaurant in Carthage serving refined Mediterranean cuisine. Discover the tasting menu, private dining and book your table online.">
+<meta property="og:title" content="Aurum | Fine Dining in Carthage">
+<meta property="og:description" content="Refined Mediterranean cuisine, a candlelit dining room and a cellar of 300 labels. Book your table.">
+<meta property="og:type" content="restaurant">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;1,400&family=Jost:wght@300;400;500&display=swap" rel="stylesheet">
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"Restaurant","name":"Aurum","servesCuisine":"Mediterranean","priceRange":"$$$$","telephone":"+21671000000","address":{"@type":"PostalAddress","streetAddress":"12 Rue de la Corniche","addressLocality":"Carthage","addressCountry":"TN"},"openingHours":["Tu-Th 19:00-23:00","Fr-Sa 12:30-15:00","Fr-Sa 19:00-00:00","Su 12:30-16:00"],"acceptsReservations":true}</script>
+<style>
+:root{--black:#0a0907;--ink:#14110d;--panel:#1b1711;--gold:#c9a45c;--gold-soft:#e3c98e;--cream:#f4ecdb;--muted:#b3a88f;--line:rgba(201,164,92,.28);color-scheme:dark}
+*{box-sizing:border-box;margin:0}
+html{scroll-behavior:smooth;scroll-padding-top:72px;height:auto}
+:root{padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}
+body{background:var(--black);color:var(--cream);font:300 1.05rem/1.7 Jost,system-ui,sans-serif;-webkit-font-smoothing:antialiased}
+h1,h2,h3{font-family:"Cormorant Garamond",Georgia,serif;font-weight:500;line-height:1.1;letter-spacing:.01em}
+h1{font-size:clamp(3rem,8vw,6.2rem)}
+h2{font-size:clamp(2.2rem,5vw,3.4rem);margin-bottom:1rem}
+h3{font-size:1.5rem}
+a{color:inherit}
+:focus-visible{outline:2px solid var(--gold);outline-offset:3px}
+.wrap{width:min(1120px,100% - 2.5rem);margin-inline:auto}
+section{padding:6rem 0}
+.lead{color:var(--muted);max-width:56ch}
+.btn{display:inline-block;padding:.95rem 2rem;border:1px solid var(--gold);color:var(--gold-soft);text-decoration:none;font-weight:400;letter-spacing:.06em;background:none;font-family:inherit;font-size:1rem;cursor:pointer;transition:background .25s,color .25s}
+.btn:hover{background:var(--gold);color:var(--black)}
+.btn.solid{background:var(--gold);color:var(--black)}
+.btn.solid:hover{background:var(--gold-soft)}
+header{position:fixed;inset:0 0 auto;z-index:20;padding-top:env(safe-area-inset-top,0px);background:linear-gradient(var(--black),rgba(10,9,7,.7));backdrop-filter:blur(8px);border-bottom:1px solid var(--line)}
+.nav{display:flex;align-items:center;justify-content:space-between;height:68px}
+.logo{font:500 1.9rem "Cormorant Garamond",serif;text-decoration:none;color:var(--gold-soft);letter-spacing:.12em}
+nav ul{display:flex;gap:1.8rem;list-style:none;padding:0}
+nav a{text-decoration:none;font-size:.95rem;color:var(--cream);opacity:.85}
+nav a:hover{color:var(--gold)}
+.burger{display:none;background:none;border:1px solid var(--line);color:var(--gold);padding:.4rem .8rem;font:inherit}
+.hero{min-height:100vh;min-height:100svh;display:grid;align-items:center;padding:8rem 0 4rem;background:radial-gradient(ellipse at 75% 45%,#2a2113 0,var(--black) 60%)}
+.hero .wrap{display:grid;grid-template-columns:1.1fr .9fr;gap:3rem;align-items:center}
+.hero p.slogan{font:italic 400 clamp(1.4rem,3vw,2rem)/1.3 "Cormorant Garamond",serif;color:var(--gold-soft);margin:1.2rem 0 2.2rem}
+.hero .actions{display:flex;gap:1rem;flex-wrap:wrap}
+.stage{position:relative;aspect-ratio:1;max-width:460px;margin-inline:auto;width:100%}
+.ring{position:absolute;inset:0;border-radius:50%;border:1px solid var(--gold);opacity:.55}
+.ring.r2{inset:7%;border-style:dashed;opacity:.35;animation:spin 60s linear infinite}
+.plate{border-radius:50%;aspect-ratio:1;box-shadow:0 0 0 6px #e9dfc8,0 0 0 7px var(--gold),0 30px 60px rgba(0,0,0,.6);background:radial-gradient(circle,var(--a) 0 12%,var(--b) 13% 24%,#e9dfc8 25% 30%,#f6efe0 31% 100%)}
+.plate{position:relative;overflow:hidden}.plate img,.tile img,.about-art img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover}
+.stage .plate{position:absolute;inset:12%;--a:#c9a45c;--b:#6b2f22}
+.intro>*{animation:rise 1s cubic-bezier(.2,.7,.2,1) both}
+.intro>*:nth-child(2){animation-delay:.2s}.intro>*:nth-child(3){animation-delay:.4s}
+.stage{animation:rise 1.4s .3s cubic-bezier(.2,.7,.2,1) both}
+@keyframes rise{from{opacity:0;transform:translateY(24px)}to{opacity:1;transform:none}}
+@keyframes spin{to{transform:rotate(360deg)}}
+.about .wrap{display:grid;grid-template-columns:1fr 1fr;gap:4rem;align-items:center}
+.values{display:grid;gap:1.4rem;margin-top:2rem}
+.values div{padding-left:1.2rem;border-left:2px solid var(--gold)}
+.values b{font:500 1.35rem "Cormorant Garamond",serif;color:var(--gold-soft);display:block}
+.about-art{aspect-ratio:4/5;border:1px solid var(--line);padding:14px;position:relative}.about-art img{inset:14px;width:calc(100% - 28px);height:calc(100% - 28px)}
+.about-art div{height:100%;background:radial-gradient(circle at 30% 20%,rgba(227,201,142,.55) 0,transparent 18%),radial-gradient(circle at 70% 25%,rgba(227,201,142,.4) 0,transparent 14%),linear-gradient(160deg,#3a2a15,#120e08 70%);display:flex;align-items:flex-end;padding:1.5rem;font:italic 1.4rem "Cormorant Garamond",serif;color:var(--gold-soft)}
+.alt{background:var(--ink);border-block:1px solid var(--line)}
+.head{text-align:center;margin-bottom:3rem}.head .lead{margin-inline:auto}
+.tabs{display:flex;justify-content:center;gap:.6rem;flex-wrap:wrap;margin-bottom:3rem}
+.tabs button{background:none;border:1px solid var(--line);color:var(--cream);padding:.6rem 1.5rem;font:inherit;cursor:pointer;transition:.25s}
+.tabs button[aria-selected=true]{background:var(--gold);color:var(--black);border-color:var(--gold)}
+.dishes{display:grid;grid-template-columns:repeat(3,1fr);gap:2rem}
+.dish{background:var(--panel);border:1px solid var(--line);padding:1.5rem;text-align:center}
+.dish .plate{width:62%;margin:.5rem auto 1.5rem}
+.dish p{color:var(--muted);font-size:.95rem;margin:.5rem 0 1rem}
+.price{font:500 1.4rem "Cormorant Garamond",serif;color:var(--gold)}
+.dish[hidden]{display:none}
+.tasting{margin-top:3rem;text-align:center;border:1px solid var(--gold);padding:2rem}
+.services{display:grid;grid-template-columns:repeat(4,1fr);gap:1.5rem}
+.svc{padding:2rem 1.5rem;border-top:2px solid var(--gold);background:var(--panel)}
+.svc p{color:var(--muted);font-size:.95rem;margin-top:.6rem}
+.gallery{display:grid;grid-template-columns:repeat(4,1fr);grid-auto-rows:190px;gap:.8rem}
+.tile{isolation:isolate;position:relative;overflow:hidden;border:1px solid var(--line);background:linear-gradient(var(--g1),var(--g2));display:flex;align-items:flex-end;padding:1rem;font:italic 1.15rem "Cormorant Garamond",serif;color:var(--gold-soft);transition:transform .5s}
+.tile::after{content:"";position:absolute;inset:0;background:linear-gradient(transparent 55%,rgba(10,9,7,.85));z-index:0}.tile span{position:relative;z-index:1}.tile:hover{transform:scale(1.02)}
+.tile.w{grid-column:span 2}.tile.h{grid-row:span 2}
+.res .wrap{display:grid;grid-template-columns:.8fr 1.2fr;gap:4rem}
+form{display:grid;grid-template-columns:1fr 1fr;gap:1.2rem;background:var(--panel);border:1px solid var(--line);padding:2rem}
+label{display:grid;gap:.4rem;font-size:.9rem;color:var(--muted)}
+.full{grid-column:1/-1}
+input,select,textarea{background:var(--black);border:1px solid var(--line);color:var(--cream);padding:.8rem;font:inherit;border-radius:0;width:100%}
+input:focus,select:focus,textarea:focus{border-color:var(--gold);outline:none}
+#ok{display:none;grid-column:1/-1;border:1px solid var(--gold);padding:1.2rem;color:var(--gold-soft)}
+.contact .wrap{display:grid;grid-template-columns:1fr 1fr;gap:4rem}
+.hours{list-style:none;padding:0;margin:1rem 0 1.5rem}
+.hours li{display:flex;justify-content:space-between;gap:1rem;padding:.5rem 0;border-bottom:1px solid var(--line)}
+.map{min-height:320px;border:1px solid var(--line);display:grid;place-items:center;text-align:center;padding:2rem;background:repeating-linear-gradient(45deg,#16120c 0 14px,#1b1711 14px 28px)}
+.social{display:flex;gap:1.2rem;margin-top:1rem}.social a{color:var(--gold-soft)}
+footer{padding:2rem 0 calc(2rem + env(safe-area-inset-bottom,0px));text-align:center;color:var(--muted);font-size:.9rem;border-top:1px solid var(--line)}
+@media(max-width:900px){
+.hero .wrap,.about .wrap,.res .wrap,.contact .wrap{grid-template-columns:1fr}
+.stage{max-width:300px;order:-1}
+.dishes{grid-template-columns:1fr}.services{grid-template-columns:1fr 1fr}.gallery{grid-template-columns:1fr 1fr}
+form{grid-template-columns:1fr}section{padding:4rem 0}
+.burger{display:block}
+nav ul{display:none;position:absolute;top:68px;left:0;right:0;flex-direction:column;background:var(--black);padding:1rem 1.5rem 1.5rem;border-bottom:1px solid var(--line)}
+nav ul.open{display:flex}}
+@media(max-width:520px){.services{grid-template-columns:1fr}}
+@media(prefers-reduced-motion:reduce){*{animation:none!important;transition:none!important;scroll-behavior:auto}}
+</style>
+</head>
+<body>
+<header><div class="wrap nav">
+<a class="logo" href="#home" aria-label="Aurum, home">AURUM</a>
+<button class="burger" aria-expanded="false" aria-controls="menu-nav">Menu</button>
+<nav aria-label="Main"><ul id="menu-nav">
+<li><a href="#about">About</a></li><li><a href="#menu">Menu</a></li><li><a href="#services">Services</a></li><li><a href="#gallery">Gallery</a></li><li><a href="#contact">Contact</a></li><li><a href="#reserve">Reserve</a></li>
+</ul></nav></div></header>
+
+<main>
+<section class="hero" id="home"><div class="wrap">
+<div class="intro">
+<h1>Aurum</h1>
+<p class="slogan">Mediterranean cuisine, served the way it deserves.</p>
+<div class="actions"><a class="btn solid" href="#menu">Explore our menu</a><a class="btn" href="#reserve">Book a table</a></div>
+</div>
+<div class="stage" role="img" aria-label="A plated signature dish"><span class="ring"></span><span class="ring r2"></span><div class="plate"><img src="images/hero.jpg" alt="Signature dish at Aurum" loading="lazy" onerror="this.remove()"></div></div>
+</div></section>
+
+<section class="about" id="about"><div class="wrap">
+<div>
+<h2>A table above the Carthage coast</h2>
+<p class="lead">Aurum opened in 2014 in a restored 1930s villa. Chef Karim Belhaj cooks with fish landed that morning, olive oil from Sfax and vegetables from a family farm in Cap Bon. The dining room seats forty, so every guest is looked after by name.</p>
+<div class="values">
+<div><b>Season first</b>The menu changes with the market, never with the calendar.</div>
+<div><b>Unhurried service</b>Dinner lasts as long as you want it to.</div>
+<div><b>A deep cellar</b>Three hundred labels, with a focus on Tunisian and Mediterranean growers.</div>
+</div></div>
+<div class="about-art" role="img" aria-label="Candlelit dining room"><img src="images/about.jpg" alt="Candlelit dining room at Aurum" loading="lazy" onerror="this.remove()"><div style="position:relative;background:linear-gradient(transparent 50%,rgba(10,9,7,.8))">Candlelight, linen and brass.</div></div>
+</div></section>
+
+<section class="alt" id="menu"><div class="wrap">
+<div class="head"><h2>The menu</h2><p class="lead">Prices in Tunisian dinars, service included.</p></div>
+<div class="tabs" role="tablist" aria-label="Menu categories">
+<button role="tab" aria-selected="true" data-c="starters">Starters</button>
+<button role="tab" aria-selected="false" data-c="mains">Mains</button>
+<button role="tab" aria-selected="false" data-c="desserts">Desserts</button></div>
+<div class="dishes" id="dishes">
+<article class="dish" data-c="starters"><div class="plate" style="--a:#d9b36a;--b:#8c3b2a"><img src="images/dish-1.jpg" alt="Scallop carpaccio" loading="lazy" onerror="this.remove()"></div><h3>Scallop carpaccio</h3><p>Hand-dived scallops, blood orange, pink pepper and Sfax olive oil.</p><span class="price">62 TND</span></article>
+<article class="dish" data-c="starters"><div class="plate" style="--a:#e8d9a8;--b:#4d6a3a"><img src="images/dish-2.jpg" alt="Burrata and heirloom tomato" loading="lazy" onerror="this.remove()"></div><h3>Burrata and heirloom tomato</h3><p>Cap Bon tomatoes, basil oil, harissa-honey drizzle.</p><span class="price">48 TND</span></article>
+<article class="dish" data-c="starters"><div class="plate" style="--a:#b5532f;--b:#2d1a12"><img src="images/dish-3.jpg" alt="Lobster brik" loading="lazy" onerror="this.remove()"></div><h3>Lobster brik</h3><p>Crisp pastry, Mediterranean lobster, soft egg and lemon-caper butter.</p><span class="price">70 TND</span></article>
+<article class="dish" data-c="mains" hidden><div class="plate" style="--a:#e6d3a0;--b:#7a4a2a"><img src="images/dish-4.jpg" alt="Sea bass in salt crust" loading="lazy" onerror="this.remove()"></div><h3>Sea bass in salt crust</h3><p>Whole fish carved at the table, fennel, preserved lemon.</p><span class="price">145 TND</span></article>
+<article class="dish" data-c="mains" hidden><div class="plate" style="--a:#7a2e24;--b:#2a120e"><img src="images/dish-5.jpg" alt="Lamb shoulder, 12 hours" loading="lazy" onerror="this.remove()"></div><h3>Lamb shoulder, 12 hours</h3><p>Slow-braised with ras el hanout, saffron couscous, roasted apricot.</p><span class="price">118 TND</span></article>
+<article class="dish" data-c="mains" hidden><div class="plate" style="--a:#d8c27a;--b:#5a4a1e"><img src="images/dish-6.jpg" alt="Truffle risotto" loading="lazy" onerror="this.remove()"></div><h3>Truffle risotto</h3><p>Carnaroli rice, black truffle, aged parmesan, brown butter.</p><span class="price">96 TND</span></article>
+<article class="dish" data-c="desserts" hidden><div class="plate" style="--a:#3a2316;--b:#c9a45c"><img src="images/dish-7.jpg" alt="Dark chocolate sphere" loading="lazy" onerror="this.remove()"></div><h3>Dark chocolate sphere</h3><p>Warm date caramel poured at the table, gold leaf, sea salt.</p><span class="price">38 TND</span></article>
+<article class="dish" data-c="desserts" hidden><div class="plate" style="--a:#f0e2b4;--b:#9a7a34"><img src="images/dish-8.jpg" alt="Orange blossom millefeuille" loading="lazy" onerror="this.remove()"></div><h3>Orange blossom millefeuille</h3><p>Caramelised pastry, vanilla cream, candied orange.</p><span class="price">34 TND</span></article>
+<article class="dish" data-c="desserts" hidden><div class="plate" style="--a:#c98a4a;--b:#6a3a1a"><img src="images/dish-9.jpg" alt="Pistachio and honey baklava" loading="lazy" onerror="this.remove()"></div><h3>Pistachio and honey baklava</h3><p>Served warm with fig ice cream.</p><span class="price">30 TND</span></article>
+</div>
+<div class="tasting"><h3>Seven-course tasting menu</h3><p class="lead" style="margin:.5rem auto 1.2rem">Chef’s selection of the season, with optional wine pairing. 260 TND per guest, 380 TND with wines.</p><a class="btn" href="#reserve">Reserve the tasting menu</a></div>
+</div></section>
+
+<section id="services"><div class="wrap">
+<div class="head"><h2>Ways to enjoy Aurum</h2></div>
+<div class="services">
+<div class="svc"><h3>Dine in</h3><p>Dinner Tuesday to Sunday, lunch on Friday, Saturday and Sunday.</p></div>
+<div class="svc"><h3>Private events</h3><p>A private salon for up to 16 guests, with a dedicated menu and sommelier.</p></div>
+<div class="svc"><h3>Catering</h3><p>Chef-led dinners at your home or venue, from 10 to 120 guests.</p></div>
+<div class="svc"><h3>Gift cards</h3><p>Tasting menu vouchers, delivered by email or in a gold-stamped box.</p></div>
+</div></div></section>
+
+<section class="alt" id="gallery"><div class="wrap">
+<div class="head"><h2>Inside Aurum</h2></div>
+<div class="gallery">
+<div class="tile w h" style="--g1:#4a3418;--g2:#14100a"><img src="images/gallery-1.jpg" alt="The dining room" loading="lazy" onerror="this.remove()"><span>The dining room</span></div>
+<div class="tile" style="--g1:#6b2f22;--g2:#1a0e0a"><img src="images/gallery-2.jpg" alt="Lamb shoulder" loading="lazy" onerror="this.remove()"><span>Lamb shoulder</span></div>
+<div class="tile" style="--g1:#2c3a24;--g2:#0e120b"><img src="images/gallery-3.jpg" alt="The kitchen garden" loading="lazy" onerror="this.remove()"><span>The kitchen garden</span></div>
+<div class="tile w" style="--g1:#3a2a15;--g2:#8a6a2c"><img src="images/gallery-4.jpg" alt="Chocolate sphere" loading="lazy" onerror="this.remove()"><span>Chocolate sphere</span></div>
+<div class="tile" style="--g1:#1a2430;--g2:#0a0d12"><img src="images/gallery-5.jpg" alt="The cellar" loading="lazy" onerror="this.remove()"><span>The cellar</span></div>
+<div class="tile" style="--g1:#5a4220;--g2:#171108"><img src="images/gallery-6.jpg" alt="Evening terrace" loading="lazy" onerror="this.remove()"><span>Evening terrace</span></div>
+</div></div></section>
+
+<section class="res" id="reserve"><div class="wrap">
+<div><h2>Reserve your table</h2><p class="lead">Tell us when you would like to dine. We confirm every request by phone or email within two hours. For parties over 8, call us directly.</p></div>
+<form id="rf">
+<label>Full name<input name="name" required autocomplete="name"></label>
+<label>Phone<input name="phone" type="tel" required autocomplete="tel"></label>
+<label class="full">Email<input name="email" type="email" required autocomplete="email"></label>
+<label>Date<input id="date" name="date" type="date" required></label>
+<label>Time<select name="time" required><option value="">Choose a time</option><option>12:30</option><option>13:30</option><option>19:00</option><option>20:00</option><option>21:00</option><option>22:00</option></select></label>
+<label class="full">Guests<select name="guests" required><option>1</option><option selected>2</option><option>3</option><option>4</option><option>5</option><option>6</option><option>7</option><option>8</option></select></label>
+<label class="full">Special requests<textarea name="notes" rows="3" placeholder="Allergies, celebration, seating preference"></textarea></label>
+<button class="btn solid full" type="submit">Request this table</button>
+<p id="ok" role="status"></p>
+</form></div></section>
+
+<section class="contact alt" id="contact"><div class="wrap">
+<div>
+<h2>Find us</h2>
+<p>12 Rue de la Corniche, Carthage, Tunisia</p>
+<p><a href="tel:+21671000000">+216 71 000 000</a> · <a href="mailto:table@aurum.example">table@aurum.example</a></p>
+<ul class="hours"><li><span>Tuesday to Thursday</span><span>19:00 to 23:00</span></li><li><span>Friday and Saturday</span><span>12:30 to 15:00, 19:00 to midnight</span></li><li><span>Sunday</span><span>12:30 to 16:00</span></li><li><span>Monday</span><span>Closed</span></li></ul>
+<div class="social"><a href="#" aria-label="Instagram">Instagram</a><a href="#" aria-label="Facebook">Facebook</a><a href="#" aria-label="TripAdvisor">TripAdvisor</a></div>
+</div>
+<div class="map"><div><h3>Carthage, above the bay</h3><p class="lead" style="margin:.5rem auto 1.2rem">Valet parking from 18:30.</p><a class="btn" href="https://www.google.com/maps/search/?api=1&query=Carthage+Tunisia" target="_blank" rel="noopener">Open in Maps</a></div></div>
+</div></section>
+</main>
+<footer>© 2026 Aurum. Please dine responsibly.</footer>
+
+<script>
+const tabs=document.querySelectorAll('.tabs button'),dishes=document.querySelectorAll('.dish');
+tabs.forEach(t=>t.addEventListener('click',()=>{tabs.forEach(b=>b.setAttribute('aria-selected',b===t));dishes.forEach(d=>d.hidden=d.dataset.c!==t.dataset.c)}));
+const burger=document.querySelector('.burger'),list=document.getElementById('menu-nav');
+burger.addEventListener('click',()=>{const o=list.classList.toggle('open');burger.setAttribute('aria-expanded',o)});
+list.addEventListener('click',()=>{list.classList.remove('open');burger.setAttribute('aria-expanded',false)});
+const d=document.getElementById('date');d.min=new Date().toISOString().slice(0,10);
+document.getElementById('rf').addEventListener('submit',e=>{e.preventDefault();const f=new FormData(e.target),ok=document.getElementById('ok');
+ok.style.display='block';ok.textContent='Thank you, '+f.get('name')+'. We received your request for '+f.get('guests')+' on '+f.get('date')+' at '+f.get('time')+'. We will confirm shortly.';e.target.reset();ok.scrollIntoView({block:'center'})});
+</script>
+</body>
+</html>
